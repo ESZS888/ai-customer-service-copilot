@@ -1,0 +1,165 @@
+{
+  "checked_at": "2026-10-20T21:28:18.087416+08:00",
+  "checks": [
+    {
+      "page": "/",
+      "http_status": 200
+    },
+    {
+      "page": "/merchant/tickets",
+      "http_status": 200
+    },
+    {
+      "page": "/merchant/dashboard",
+      "http_status": 200
+    }
+  ],
+  "restart_recovered_ticket": {
+    "ticket_id": "TK-233FED7183924C098B9FF68272C0EDF7",
+    "source_request_id": "f0e4af8a-a011-465f-a623-17ef20a836b2",
+    "data_source": "demo",
+    "ticket_summary": "用户投诉订单ORD-001耳机出现杂音，要求记录工单，明确暂不退款。",
+    "conversation_id": "2344e717-b85a-43f5-8b34-b39db197e442",
+    "issue_category": "产品质量-音质异常（杂音）",
+    "detail": "订单号ORD-001；用户反馈耳机使用中出现杂音，影响听感；用户明确表示暂不需要退款，仅要求记录该投诉。",
+    "original_message": "演示验收：我要投诉 ORD-001 耳机有杂音，请记录工单，暂不退款。",
+    "urgency": "medium",
+    "suggested_action": "记录投诉内容；后续可向用户确认杂音出现的具体场景（连接方式、音源、使用时长等）并评估质检或换货方案；用户暂不退款，暂不发起退款流程。",
+    "status": "resolved",
+    "processing_note": "演示验收：已核实演示诉求并记录处理建议；未实际退款或联系真实买家。",
+    "version": 3,
+    "created_at": "2026-10-20T13:17:39.626157+00:00",
+    "updated_at": "2026-10-20T13:18:09.010303+00:00",
+    "resolved_at": "2026-10-20T13:18:09.010303+00:00",
+    "is_persisted": true,
+    "timestamp": "2026-10-20T13:17:39.626157+00:00",
+    "order_ids": [
+      "ORD-001"
+    ],
+    "history": [
+      {
+        "event_type": "ticket_created",
+        "occurred_at": "2026-10-20T13:17:39.629072+00:00",
+        "status": "open"
+      },
+      {
+        "event_type": "ticket_status_changed",
+        "occurred_at": "2026-10-20T13:18:04.612372+00:00",
+        "from_status": "open",
+        "to_status": "in_progress",
+        "note": "演示验收：正在核实耳机杂音，尚未进行任何退款。",
+        "version": 2
+      },
+      {
+        "event_type": "ticket_status_changed",
+        "occurred_at": "2026-10-20T13:18:09.011178+00:00",
+        "from_status": "in_progress",
+        "to_status": "resolved",
+        "note": "演示验收：已核实演示诉求并记录处理建议；未实际退款或联系真实买家。",
+        "version": 3
+      }
+    ]
+  },
+  "idempotent_replay": {
+    "same_ticket": true,
+    "request_count_unchanged": true,
+    "latest_ticket_status_preserved": true,
+    "note": "重放返回首次提交的响应快照，最新状态由详情接口提供。"
+  },
+  "sources": {
+    "demo": {
+      "overview": {
+        "data_source": "demo",
+        "timezone": "Asia/Hong_Kong",
+        "range": {
+          "start_date": null,
+          "end_date": null
+        },
+        "requests": 1,
+        "conversations": 1,
+        "request_status": {
+          "processing": 0,
+          "succeeded": 1,
+          "failed": 0,
+          "interrupted": 0
+        },
+        "completed_requests": 1,
+        "failed_requests": 0,
+        "failure_rate": 0.0,
+        "intents": {
+          "complaint": 1
+        },
+        "tickets_created": 1,
+        "ticket_status": {
+          "open": 0,
+          "in_progress": 0,
+          "resolved": 1
+        },
+        "pending_tickets_all_time": 0,
+        "latency": {
+          "success": {
+            "samples": 1,
+            "median_ms": 16621
+          },
+          "failure": {
+            "samples": 0,
+            "median_ms": null
+          }
+        },
+        "failure_reasons": []
+      },
+      "sql_reconciliation": "passed",
+      "request_detail_total": 1
+    },
+    "evaluation": {
+      "overview": {
+        "data_source": "evaluation",
+        "timezone": "Asia/Hong_Kong",
+        "range": {
+          "start_date": null,
+          "end_date": null
+        },
+        "requests": 60,
+        "conversations": 60,
+        "request_status": {
+          "processing": 0,
+          "succeeded": 60,
+          "failed": 0,
+          "interrupted": 0
+        },
+        "completed_requests": 60,
+        "failed_requests": 0,
+        "failure_rate": 0.0,
+        "intents": {
+          "complaint": 10,
+          "general": 5,
+          "logistics": 9,
+          "order": 10,
+          "policy": 3,
+          "product": 23
+        },
+        "tickets_created": 10,
+        "ticket_status": {
+          "open": 10,
+          "in_progress": 0,
+          "resolved": 0
+        },
+        "pending_tickets_all_time": 10,
+        "latency": {
+          "success": {
+            "samples": 60,
+            "median_ms": 7819.5
+          },
+          "failure": {
+            "samples": 0,
+            "median_ms": null
+          }
+        },
+        "failure_reasons": []
+      },
+      "sql_reconciliation": "passed",
+      "request_detail_total": 60
+    }
+  },
+  "sqlite_integrity": "ok"
+}

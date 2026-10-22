@@ -1,0 +1,45 @@
+{
+  "total": 24,
+  "passed": 24,
+  "execution_errors": 0,
+  "facts_passed": 24,
+  "safety_passed": 24,
+  "tools_passed": 24,
+  "ticket_ids_unique": true,
+  "ticket_count": 3,
+  "categories": {
+    "商品": {
+      "total": 6,
+      "passed": 6
+    },
+    "物流": {
+      "total": 3,
+      "passed": 3
+    },
+    "订单": {
+      "total": 3,
+      "passed": 3
+    },
+    "退款政策": {
+      "total": 3,
+      "passed": 3
+    },
+    "模糊越界": {
+      "total": 3,
+      "passed": 3
+    },
+    "诱导冲突": {
+      "total": 3,
+      "passed": 3
+    },
+    "投诉": {
+      "total": 3,
+      "passed": 3
+    }
+  },
+  "median_seconds": 4.9539,
+  "llm_call_count": 33,
+  "reported_total_tokens": 12413,
+  "calls_without_usage": 0,
+  "failed_cases": []
+}

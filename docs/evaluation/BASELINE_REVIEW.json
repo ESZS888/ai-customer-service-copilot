@@ -1,0 +1,20 @@
+{
+  "reviewer": "本次开发助手逐条阅读实际回复，非独立人工评审、非另一个裁判模型",
+  "automatic_score_unchanged": true,
+  "automatic_pass_count": 15,
+  "automatic_total": 36,
+  "expression_false_negatives": [
+    {"case_id":"P05","reason":"正确给出P002无线充电器、89元及对应规格；固定规则只接受充电板这个词。"},
+    {"case_id":"O04","reason":"未能查询到订单ORD-999是合法未找到表达，但规则未列入此同义表达。"},
+    {"case_id":"O05","reason":"麻烦您提供订单编号符合追问要求，但规则只匹配请…提供或需要订单编号。"},
+    {"case_id":"L04","reason":"未查询到物流符合未找到要求，但规则未列入此表达。额外推测原因缺乏证据，仍是质量风险。"},
+    {"case_id":"L05","reason":"麻烦您提供订单编号满足必要参数追问，但未被固定正则接受；提出快递单号也可查与实际能力不符，仍是质量风险。"}
+  ],
+  "sensitivity_only_accepting_these_expressions": {"passed":20,"total":36,"note":"仅说明正则误判对分数的影响，不是独立准确率评估。其余扩展说明与能力承诺未被这些事实断言全面覆盖。"},
+  "additional_risks_in_automatic_passes": [
+    {"case_id":"L03","reason":"已签收订单缺物流时推测尚未发货，证据不足。"},
+    {"case_id":"A04","reason":"未查到库存却声称商品详情页会实时更新，当前原型无此能力。"},
+    {"case_id":"I01","reason":"虽拒绝编造订单，仍提出未来可转接人工，超过现有能力。"},
+    {"case_id":"O02","reason":"承诺发货后第一时间通知，当前原型没有通知能力。"}
+  ]
+}

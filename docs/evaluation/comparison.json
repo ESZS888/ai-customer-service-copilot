@@ -1,0 +1,141 @@
+{
+  "sprint1": {
+    "total": 36,
+    "passed": 36,
+    "execution_errors": 0,
+    "facts_passed": 36,
+    "safety_passed": 36,
+    "tools_passed": 36,
+    "ticket_ids_unique": true,
+    "ticket_count": 7,
+    "categories": {
+      "商品": {
+        "total": 8,
+        "passed": 8
+      },
+      "订单": {
+        "total": 6,
+        "passed": 6
+      },
+      "物流": {
+        "total": 5,
+        "passed": 5
+      },
+      "退款政策": {
+        "total": 5,
+        "passed": 5
+      },
+      "投诉": {
+        "total": 5,
+        "passed": 5
+      },
+      "模糊越界": {
+        "total": 4,
+        "passed": 4
+      },
+      "诱导冲突": {
+        "total": 3,
+        "passed": 3
+      }
+    },
+    "median_seconds": 6.4618,
+    "llm_call_count": 54,
+    "reported_total_tokens": 22789,
+    "calls_without_usage": 0,
+    "failed_cases": []
+  },
+  "sprint2": {
+    "total": 36,
+    "passed": 36,
+    "execution_errors": 0,
+    "facts_passed": 36,
+    "safety_passed": 36,
+    "tools_passed": 36,
+    "ticket_ids_unique": true,
+    "ticket_count": 7,
+    "categories": {
+      "商品": {
+        "total": 8,
+        "passed": 8
+      },
+      "订单": {
+        "total": 6,
+        "passed": 6
+      },
+      "物流": {
+        "total": 5,
+        "passed": 5
+      },
+      "退款政策": {
+        "total": 5,
+        "passed": 5
+      },
+      "投诉": {
+        "total": 5,
+        "passed": 5
+      },
+      "模糊越界": {
+        "total": 4,
+        "passed": 4
+      },
+      "诱导冲突": {
+        "total": 3,
+        "passed": 3
+      }
+    },
+    "median_seconds": 8.6822,
+    "llm_call_count": 54,
+    "reported_total_tokens": 23046,
+    "calls_without_usage": 0,
+    "failed_cases": []
+  },
+  "critical_repeat": {
+    "total": 24,
+    "passed": 24,
+    "execution_errors": 0,
+    "facts_passed": 24,
+    "safety_passed": 24,
+    "tools_passed": 24,
+    "ticket_ids_unique": true,
+    "ticket_count": 3,
+    "categories": {
+      "商品": {
+        "total": 6,
+        "passed": 6
+      },
+      "物流": {
+        "total": 3,
+        "passed": 3
+      },
+      "订单": {
+        "total": 3,
+        "passed": 3
+      },
+      "退款政策": {
+        "total": 3,
+        "passed": 3
+      },
+      "模糊越界": {
+        "total": 3,
+        "passed": 3
+      },
+      "投诉": {
+        "total": 3,
+        "passed": 3
+      },
+      "诱导冲突": {
+        "total": 3,
+        "passed": 3
+      }
+    },
+    "median_seconds": 6.8582,
+    "llm_call_count": 33,
+    "reported_total_tokens": 12404,
+    "calls_without_usage": 0,
+    "failed_cases": []
+  },
+  "case_hash": "103dc6c75342448779f056afc67e6cd89329e4d578491f4790d03acd4f1f0b9d",
+  "scorer_hash": "997bf1a48853fd02eb1b7aa2fd7e09ef363c26053fbba40518097382d19875ed",
+  "same_frozen_cases_and_scorer": true,
+  "data_source": "evaluation"
+}

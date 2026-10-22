@@ -1,0 +1,39 @@
+# Local configuration; templates are public
+.env
+.env.*
+!.env.example
+!.env.local.example
+*.pem
+*.key
+
+# Python and tooling
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+
+# Frontend and generated files
+node_modules/
+.next/
+out/
+dist/
+build/
+next-env.d.ts
+*.tsbuildinfo
+
+# Runtime data (schema code in backend/app/storage IS tracked)
+backend/storage/
+backend/eval-results/
+*.sqlite
+*.sqlite3
+*.sqlite3-*
+*.db
+*.db-*
+*.log
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
